@@ -43,9 +43,9 @@ Pertanyaan Bisnis : Seller mana yang paling banyak memberi keuntungan terhadap p
 * Data Pre-Processing 
 > Data Cleansing
 
-Missing Values(Summary)
+Missing Values (Summary)
 - Kolom yang didrop dikarenakan kardinalistas yang tinggi yaitu : ['model','trim','vin','mmr','seller']
-- Kolom dengan missing value :`make, `body`, `transmission`, `condition`, `odometer`, `color`, dan `interior`
+- Kolom dengan missing value : `make`, `body`, `transmission`, `condition`, `odometer`, `color`, dan `interior`
 - Nilai missing value di jadikan persen dan nilai yang datanya memiliki missing value lebih dari 10% akan didrop, seluruh data memiliki missing value dibawah 10% kecuali ‘transmission’ yang memiliki nilai missing value 11.7%, 
 - Transmission diisi menggunakan filna yang nilainya disi dengan modus
 
@@ -60,7 +60,7 @@ Transformation (Summary)
 - Log Transformasi pada data ini hanya ingin menunjukkan bagaimana distribusinya, tetapi karena hasil perubanhan log transformasi hasil yang didapatkan tidak memuaskan jadi tidak diaplikasikan dalam data yang dimiliki, melakukan pengamatan dengan kolom odometer dan sellingprice
 
 Encoding (Summary)
-- Untuk kolom dengan nilai unik tinggi disederhanakan nilainya agar lebih mudah untuk proses yang akan dijalankan pada machine learning,  kolom tersebut yaitu `make, `body`, dan `state`.
+- Untuk kolom dengan nilai unik tinggi disederhanakan nilainya agar lebih mudah untuk proses yang akan dijalankan pada machine learning,  kolom tersebut yaitu `make`, `body`,dan `state`.
 - Body yang awalnya memiliki nilai unique 43 menjadi 10, dengan encoding huruf besar kecil dan pembenaran kata-kata yang sebenarnya sama 
 - Untuk kolom state dikelompokkan menjadi beberapa nilai unik, pada kolom ini berisi kode negara Unite State dan beberapa negara lain yang pengelompokkannya menjadi ['west','south','northeast','midwest’, 'outside_us’] 
 - Untuk kolom 'saledate’ diproses menjadi day, month dan year agar dapat mendukung proses yang berikutnya  
