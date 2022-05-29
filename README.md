@@ -41,6 +41,7 @@ Pertanyaan Bisnis :  Apakah Merk, Bentuk, dan Tahun mobil tersebut berpengaruh t
 Pertanyaan Bisnis : Seller mana yang paling banyak memberi keuntungan terhadap perusahaan kita?
 
 * Data Pre-Processing 
+
 > Data Cleansing
 
 Missing Values (Summary)
@@ -56,6 +57,7 @@ Outliers (Summary)
 - Handling outlier menggunakan metode menggunakan Z-Score berdasarkan nilai  z-score kurang dari 3, tetapi terdapat juga saran untuk tetap menggunankan nilai outier ini dikarenakan nilai tersebut memang nilai yang wajar dalam auction mobil meskipun nilainya extream,  jika menggunakan metode z-score data  berkurang sebanyak 25058 baris
 
 > Feature Engineering
+
 Transformation (Summary)
 - Log Transformasi pada data ini hanya ingin menunjukkan bagaimana distribusinya, tetapi karena hasil perubanhan log transformasi hasil yang didapatkan tidak memuaskan jadi tidak diaplikasikan dalam data yang dimiliki, melakukan pengamatan dengan kolom odometer dan sellingprice
 
