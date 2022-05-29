@@ -12,6 +12,7 @@ Gilang Fitra R.
 Dataset : Used Car Auction Prices (https://www.kaggle.com/datasets/tunguz/used-car-auction-prices)
 
 * EDA
+
 Descriptive Analysis (Summary)
 - Semua kolom tipenya sudah sesuai
 - Kolom dengan missing value : `make`, `model`, `trim`, `body`, `transmission`, `condition`, `odometer`, `color`, dan `interior`
