@@ -11,7 +11,7 @@ M. Shohih Alwi
 Gilang Fitra R.
 Dataset : Used Car Auction Prices (https://www.kaggle.com/datasets/tunguz/used-car-auction-prices)
 
-* EDA
+# EDA
 
 Descriptive Analysis (Summary)
 - Semua kolom tipenya sudah sesuai
@@ -41,7 +41,7 @@ Pertanyaan Bisnis :  Apakah Merk, Bentuk, dan Tahun mobil tersebut berpengaruh t
 (3)
 Pertanyaan Bisnis : Seller mana yang paling banyak memberi keuntungan terhadap perusahaan kita?
 
-* Data Pre-Processing 
+# Data Pre-Processing 
 
 > Data Cleansing
 
