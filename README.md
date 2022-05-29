@@ -74,5 +74,43 @@ Feature Encoding (Summary)
 - Feature encode menggunakan Onehot Encoding dengan hasil kolom sebanyak 122, yang hasil dari dataPre-processing ini kan dilanjutkan untuk pembutan model machine learning
 
 
+## Modeling
+
+Split Data Train & Test(Summary)
+- Data yang sudah di Preprocessing disimpan/ di write pada file bernama ‘clean_dataset.csv’, data ini yang akan di bagi menjadi data Training dan data Testing dengan persentase Training set : Testing set =  80:20
+- Dari proses preprocessing feature yang didapatkan sebanyak 121, yang fiture ini akan digunakan untuk mencari harga mobil
+- Random set yang digunakan yaitu 69
+
+Modeling (Algoritma yang diimplementasikan) (Summary)
+- Algoritma yang dicoba pada data set ini yaitu Linear dan Non Linear, untuk Linear yaitu : Linear Regression, Ridge, Lasso, ElasticNet, dan XGB Regressor . Untuk Non Linear yaitu : Decision Tree dan Random Forest
+
+Model Evaluation: Pemilihan dan perhitungan metrics (Summary)
+- Metrics Evaluation yang digunakan untuk menentukan model yang akan diaplikasikan pada regresi prediksi  harga mobil yaitu : 𝑹^𝟐,  𝑹𝑴𝑺𝑬( 𝑹𝒐𝒐𝒕 𝑴𝒆𝒂𝒏 𝒔𝒒𝒖𝒂𝒓𝒆 𝑬𝒓𝒓𝒐𝒓), dan 𝑴𝑨𝑬(𝑴𝒆𝒂𝒏 𝑨𝒃𝒔𝒐𝒍𝒖𝒕𝒆 𝑬𝒓𝒓𝒐𝒓)  
+- Dari hasil yang didapatkan untuk nilai 𝑹^𝟐 , yang paling bagus dan yang akan diaplikasikan yaitu untuk Algoritma Linear metode XGB Regressor 
+
+Model Evaluation: Apakah Model sudah best-fit (Summary)
+Model sudah di anggap Best-fit dikarenakan model yang digunakan memiliki nilai Model Evaluation yang terbaik  dengan nilai:
+      𝑅^2 = 0.836
+      𝑅^2 = 0.844
+      RMSE = 3329.1142
+      MAE = 2294.3902
+
+Hyperparameter Tuning (Summary)
+Hyperparameter Tuning yang digunakan pada pemodelan ini menggnakan parameter: 
+    learning_rate=[0.05, 0.1, 0.2], 
+    n_estimators=[100, 400, 800],
+    max_depth=[3, 6, 9],
+    min_child_weight=[1, 10, 100]
+
+
+> Feature Importance
+
+Feature Importance (Summary)
+Dari Feature Importance didapatkan feature-feature dengan skor yang tinggi, dari hasil tersebut feature dengan nilai skor yang tinggi akan diteruskan pada proses Feature Selection
+
+Feature Selection (Summary)
+
+
+
 
 
