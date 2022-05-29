@@ -2,13 +2,15 @@
 
 Nama Kelompok :
 Team Five
+
 Anggota kelompok :
-Trie Sony K.
-Amru
-M. Reza Syahziar
-Aulia Pradana R.
-M. Shohih Alwi
+Trie Sony K.,
+Amru,
+M. Reza Syahziar,
+Aulia Pradana R.,
+M. Shohih Alwi,
 Gilang Fitra R.
+
 Dataset : Used Car Auction Prices (https://www.kaggle.com/datasets/tunguz/used-car-auction-prices)
 
 # EDA
