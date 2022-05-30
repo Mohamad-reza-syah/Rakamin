@@ -114,7 +114,8 @@ Feature Selection (Summary)
 - Jika perusahaan fokus menjual kendaraan dengan make (brand) dan body yang direkomendasikan, keuntungan yang didapatkan akan lebih besar, terutama jika perusahaan memiliki gudang atau showroom yang terbatas.
 
 
-Iterasi Model dengan Feature Teratas!
+> Iterasi Model dengan Feature Teratas!
+
 Nilai 𝑹^𝟐 tidak berbeda jauh, namun untuk nilai RMSE naik sekitar 60. Artinyta dengan mengurangi fitur performa model tidak turun. Namun perlu diperhatikan fitur masih terlalu banyak (50), akan dilakukan iterasi selanjutnya agar jumlah fitur yang dipakai tidak banyak, agar meringankan ketika model digunakan oleh AI/ML Engineer
 
 
