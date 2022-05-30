@@ -106,10 +106,16 @@ Hyperparameter Tuning yang digunakan pada pemodelan ini menggnakan parameter:
 > Feature Importance
 
 Feature Importance (Summary)
-Dari Feature Importance didapatkan feature-feature dengan skor yang tinggi, dari hasil tersebut feature dengan nilai skor yang tinggi akan diteruskan pada proses Feature Selection
+Karena fitur sebelumnya masih sangat banyak, fitur perlu dikurangi dengan mengambil fitur yang memiliki nilai feature importance tinggi. Namun, karena fitur sebelumnya masih terlalu banyak (120+), diambil 50 fitur teratas terlebih dahulu. Setelah dicek pengaruhnya terhadap model akan dikurangi lagi jumlah fitur tersebut. Diharapkan penurunan jumlah fitur tidak mengurangi score model secara signifikan!
 
 Feature Selection (Summary)
+- Kebanyakan fitur teratas adalah fitur kategorikal make (brand kendaraan) dan body (bentuk kendaraan). Semua data numerical (year, odometer dan condition) masuk ke dalam 20 fitur terbaik dan diantara semua data numerical, odometer memiliki nilai importance tertinggi
+- Artinya dalam penentuan harga kendaraan, make (brand) dan body sangat menentukan. Kendaraan dengan brand bmw, Mercedes-benz dan Lexus dan body supercrew, hatchback dan sedan memiliki harga jual kembali yang tinggi jika dibandingkan mobil lain
+- Jika perusahaan fokus menjual kendaraan dengan make (brand) dan body yang direkomendasikan, keuntungan yang didapatkan akan lebih besar, terutama jika perusahaan memiliki gudang atau showroom yang terbatas.
 
+
+Iterasi Model dengan Feature Teratas!
+Nilai 𝑹^𝟐 tidak berbeda jauh, namun untuk nilai RMSE naik sekitar 60. Artinyta dengan mengurangi fitur performa model tidak turun. Namun perlu diperhatikan fitur masih terlalu banyak (50), akan dilakukan iterasi selanjutnya agar jumlah fitur yang dipakai tidak banyak, agar meringankan ketika model digunakan oleh AI/ML Engineer
 
 
 
